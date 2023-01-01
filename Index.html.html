@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year</title>
+  <style>
+    body { background-image: url("https://images.pling.com/img/00/00/62/09/22/1631024/c16edc53b6078fd9d632bb6af553647c5ebef3efb478fc0432db6a93b510bb8aafee.png") ;
+    background-size: 1980px 1980px;    
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+    h1 {
+      color: #FFA07A;
+      font-size: 2em;
+      text-shadow: 5px 5px 5px #8b008bac;
+      animation: neon 1s ease-in-out infinite alternate;
+    }
+    p {
+      color: #988ceb;
+      font-size: 2em;
+    }
+    img {
+      width: 50%;
+      animation: spin 5s linear infinite;
+    }
+    @keyframes neon {
+      from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+      }
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+      }
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="message"></h1>
+  <p><b>Wishing you a happy and successful year ahead</b></p>
+  <br><br><br><br><br><br><br><br>
+  <img src="https://wishes.photos/wp-content/uploads/2021/11/happy-new-year-2023-festive-pattern-with-christmas-balls-and-snowflakes-concept-on-color-background-vector.webp" alt="Happy New Year">
+  <script>
+    // Get the current year
+    var currentYear = new Date().getFullYear();
+    // Set the message text
+    document.getElementById("message").innerHTML = "Happy New Year " + (currentYear) + "!!!";
+  </script>
+</body>
+</html>
